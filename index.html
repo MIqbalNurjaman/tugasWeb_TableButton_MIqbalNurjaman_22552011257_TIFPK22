@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button & Table</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menautkan file CSS -->
+</head>
+
+<body>
+    <h1>Data Mahasiswa Universitas Teknologi Bandung</h1>
+    <form action="process.php" method="POST" name="form1"> <!-- Mengarahkan ke file PHP -->
+        <table>
+            <tr>
+                <td>Nama:</td>
+                <td><input type="text" name="nama" size="25"></td>
+            </tr>
+            <tr>
+                <td>NIM:</td>
+                <td><input type="text" name="nim" size="25"></td>
+            </tr>
+            <tr>
+                <td>Alamat:</td>
+                <td><input type="text" name="alamat" size="25"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin:</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Laki-Laki" checked>Laki-Laki
+                    <input type="radio" name="jenis_kelamin" value="Perempuan">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Jurusan:</td>
+                <td>
+                    <select name="jurusan">
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                        <option value="Bisnis Digital">Bisnis Digital</option>
+                        <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <input type="submit" name="spn" value="Simpan" class="button">
+            <input type="submit" name="masuk_tabel" value="Masuk ke Tabel" class="button"> <!-- Tombol Masuk ke Tabel -->
+        </div>
+    </form>
+
+    <footer>
+        <p>© 2024 M. Iqbal Nurjaman - 22552011257 - TIFPK22</p>
+    </footer>
+</body>
+</html>
